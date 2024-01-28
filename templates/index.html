@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>CSE312 Project part 1</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}"/>
+    
+    <link rel="icon" type="image/x-icon" href="templates/image/cat.jpg">
+    <script type="text/javascript" src="{{ url_for('static', filename='css/script/script.js')}}"></script>
+    
+</head>
+<body onload="hello();">
+
+<h1>Project part1</h1>
+
+<h1>Number of Page Visits: {{cookie_count}}</h1>
+
+<a href="/visit-counter" class="bn">Increment!</a>
+
+<p id="paragraph">
+    The HTMl has this frame 🙂
+</p>
+
+<div class="frame">
+    <img src="{{ url_for('static', filename='css/image/Jesse-Hartloff.jpg')}}" alt="Mona Lisa" />
+  </div>
+
+<br/>
+<hr/>
+
+
+
+</body>
+</html>
